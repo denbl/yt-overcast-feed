@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1f4a"/>
+      <stop offset="0.45" stop-color="#6a3a78"/>
+      <stop offset="0.72" stop-color="#f0765a"/>
+      <stop offset="0.80" stop-color="#ffb35c"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1d3a"/>
+      <stop offset="1" stop-color="#120f22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="above"><rect x="0" y="0" width="3000" height="2400"/></clipPath>
+  </defs>
+
+  <rect width="3000" height="3000" fill="url(#sky)"/>
+
+  <!-- rising sun -->
+  <g clip-path="url(#above)">
+    <circle cx="1500" cy="2400" r="1100" fill="url(#glow)"/>
+    <circle cx="1500" cy="2400" r="520" fill="#ffd27a"/>
+  </g>
+
+  <!-- ground and road -->
+  <rect x="0" y="2400" width="3000" height="600" fill="url(#ground)"/>
+  <polygon points="1440,2400 1560,2400 2500,3000 500,3000" fill="#3a2a4e"/>
+  <polygon points="1494,2440 1506,2440 1530,2560 1470,2560" fill="#ffd27a"/>
+  <polygon points="1462,2640 1538,2640 1575,2800 1425,2800" fill="#ffd27a"/>
+  <polygon points="1410,2890 1590,2890 1620,3000 1380,3000" fill="#ffd27a"/>
+
+  <!-- title -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" fill="#ffffff" text-anchor="middle">
+    <text x="1500" y="900" font-size="560" letter-spacing="10">MORNING</text>
+    <text x="1500" y="1460" font-size="560" letter-spacing="10">RUNS</text>
+  </g>
+</svg>
